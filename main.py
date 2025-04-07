@@ -63,5 +63,5 @@ def submit_form():
                            email=email
                            )
     with open('form.txt', 'a',) as f:
-        f.write(f"Ad: {ad}\n Tarih: {date}\n Email: {email}\n Adres: {address}\n\n")
+        f.write("İsim:" + name + '\n' + "Tarih:" + date + '\n' + "Adres:" + address + '\n' + "Email:" + email + '\n')
 app.run(debug=True)
